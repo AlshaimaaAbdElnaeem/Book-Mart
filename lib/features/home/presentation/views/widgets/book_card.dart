@@ -13,7 +13,7 @@ class BookCard extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(6.sp),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(12.sp),
+            borderRadius: BorderRadius.circular(10.sp),
             image: const DecorationImage(
               fit: BoxFit.fill,
               image: AssetImage("assets/images/image.webp"),
