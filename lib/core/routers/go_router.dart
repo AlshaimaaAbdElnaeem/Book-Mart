@@ -1,6 +1,7 @@
 import 'package:book_mart/core/routers/constant_router.dart';
 import 'package:book_mart/features/home/presentation/views/book_details_view.dart';
 import 'package:book_mart/features/home/presentation/views/home_view.dart';
+import 'package:book_mart/features/search/presentation/views/search_view.dart';
 import 'package:book_mart/features/splash/presentation/views/splash_view.dart';
 import 'package:go_router/go_router.dart';
 
@@ -17,6 +18,10 @@ GoRouter goRouter() {
     GoRoute(
       path: bookDetailsView,
       builder: (context, state) => const BookDetailsView(),
+    ),
+      GoRoute(
+      path: searchView,
+      builder: (context, state) => const SearchView(),
     ),
   ]);
 }

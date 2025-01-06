@@ -1,3 +1,4 @@
+import 'package:book_mart/core/utlis/app_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -15,7 +16,7 @@ class SimilarBooksSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            "You can also like",
+            AppStrings.similarTitle,
             textAlign: TextAlign.start,
             style: Styles.textStyle14.copyWith(
               fontWeight: FontWeight.bold,
