@@ -1,7 +1,10 @@
 import 'package:book_mart/core/utlis/size_media.dart';
 import 'package:book_mart/core/utlis/styles.dart';
+import 'package:book_mart/core/widgets/custom_button.dart';
 import 'package:book_mart/features/home/presentation/views/widgets/book_card.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'books_action.dart';
 import 'custom_book_details_app_bar.dart';
 import 'custom_ratting_book.dart';
 
@@ -32,10 +35,18 @@ class BookDetailsViewBody extends StatelessWidget {
             ),
           ),
         ),
+        SizedBox(
+          height: 8.h,
+        ),
         const CustomRattingBook(
           mainAxisAlignment: MainAxisAlignment.center,
-        )
+        ),
+        SizedBox(
+          height: 30.h,
+        ),
+        const BooksAction()
       ],
     );
   }
 }
+
