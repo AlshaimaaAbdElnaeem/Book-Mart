@@ -11,7 +11,6 @@ void main() {
 class BookMart extends StatelessWidget {
   const BookMart({super.key});
 
-
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(

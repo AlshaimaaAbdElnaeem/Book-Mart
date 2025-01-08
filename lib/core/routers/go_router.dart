@@ -19,14 +19,14 @@ GoRouter goRouter() {
       path: bookDetailsView,
       builder: (context, state) => const BookDetailsView(),
     ),
-      GoRoute(
+    GoRoute(
       path: searchView,
       builder: (context, state) => const SearchView(),
     ),
   ]);
 }
-// to send data for next page  
+// to send data for next page
 // GoRoute(
 //   path: '/users/:userId',
 //   builder: (context, state) => const UserScreen(id: state.pathParameters['userId']),
-// ), 
+// ),
