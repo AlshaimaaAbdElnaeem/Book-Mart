@@ -1,15 +1,17 @@
 import 'package:book_mart/core/routers/constant_router.dart';
+import 'package:book_mart/core/utlis/api_service.dart';
 import 'package:book_mart/core/utlis/size_media.dart';
 import 'package:book_mart/core/utlis/styles.dart';
+import 'package:book_mart/features/home/data/repos/home_repo_implement.dart';
 import 'package:book_mart/features/home/presentation/views/widgets/book_card.dart';
 import 'package:book_mart/features/home/presentation/views/widgets/custom_ratting_book.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
 class BestSellerItem extends StatelessWidget {
   const BestSellerItem({super.key});
-
   @override
   Widget build(BuildContext context) {
     return InkWell(
